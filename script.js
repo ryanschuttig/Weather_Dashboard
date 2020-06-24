@@ -61,7 +61,11 @@ function fiveDay(searchInput) {
   .then(function(response) {
     console.log(response);
 
-    for (let index = 0; index < array.length; index++) {
+    for (let index = 4; index < response.list.length; index += 8) {
+      var column = $("<div>");
+      column.addClass("col");
+      column.text(response.list[index]);
+      $("#forecastrow").append(column);
       
     }
     
