@@ -49,3 +49,7 @@ form.example button {
   .citylist {
       float: left;
   }
+  
+  .citysearch {
+      float: left;
+  }
