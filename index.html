@@ -21,73 +21,80 @@
 <body>
     <header>
         <h1
-            style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+            style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" id="title">
             Weather Dashboard</h1>
     </header>
-    <!-- Search Bar -->
-    <p1
-        style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
-        Search for a City</p1>
-    <!-- Search Button -->
-    <nav class="navbar navbar-light bg-light">
-        <form class="example" action="action_page.php">
-            <input type="text" id="citysearch" placeholder="Search.." name="search">
-            <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
-    </nav>
+
     <!-- Link to API and populate city data -->
-    <div class="container">
+    <div class="container float-right" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
         <div class="cityrow">
             <h1 id="citydata"></h1>
-            <div class="col-lg">
+            <div class="col-md-9" id="weatherdata">
                 Populate City Data Here
             </div>
         </div>
     </div>
-    <br>
-    <!-- City List -->
-    <div class="container">
-        <!-- 5-Day Forecast -->
-        <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-            <div class="card-header">Date</div>
-            <div class="card-body">
-                <h5 class="card-title">Temp</h5>
-                <p class="card-text">Humidity</p>
-            </div>
-        </div>
-
-        <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-            <div class="card-header">Date</div>
-            <div class="card-body">
-                <h5 class="card-title">Temp</h5>
-                <p class="card-text">Humidity</p>
-            </div>
-        </div>
-
-        <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-            <div class="card-header">Date</div>
-            <div class="card-body">
-                <h5 class="card-title">Temp</h5>
-                <p class="card-text">Humidity</p>
-            </div>
-        </div>
-
-        <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-            <div class="card-header">Date</div>
-            <div class="card-body">
-                <h5 class="card-title">Temp</h5>
-                <p class="card-text">Humidity</p>
-            </div>
-        </div>
-
-        <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-            <div class="card-header">Date</div>
-            <div class="card-body">
-                <h5 class="card-title">Temp</h5>
-                <p class="card-text">Humidity</p>
-            </div>
-        </div>
+    <!-- Search Bar -->
+    <p1
+        style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+        Search for a City:</p1>
+    <!-- Search Button -->
+    <div class="container float-left" id="searchcontainer">
+        <nav class="navbar navbar-light bg-light">
+            <form class="example" action="action_page.php">
+                <input type="text" id="citysearch" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </nav>
     </div>
+    <ul id="history">
+    </ul>
+
+
+
+    <!-- City List -->
+    <!-- <div class="container"> -->
+    <!-- 5-Day Forecast -->
+    <!-- <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+            <div class="card-header">Date</div>
+            <div class="card-body">
+                <h5 class="card-title">Temp</h5>
+                <p class="card-text">Humidity</p>
+            </div>
+        </div>
+
+        <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+            <div class="card-header">Date</div>
+            <div class="card-body">
+                <h5 class="card-title">Temp</h5>
+                <p class="card-text">Humidity</p>
+            </div>
+        </div>
+
+        <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+            <div class="card-header">Date</div>
+            <div class="card-body">
+                <h5 class="card-title">Temp</h5>
+                <p class="card-text">Humidity</p>
+            </div>
+        </div>
+
+        <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+            <div class="card-header">Date</div>
+            <div class="card-body">
+                <h5 class="card-title">Temp</h5>
+                <p class="card-text">Humidity</p>
+            </div>
+        </div>
+
+        <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+            <div class="card-header">Date</div>
+            <div class="card-body">
+                <h5 class="card-title">Temp</h5>
+                <p class="card-text">Humidity</p>
+            </div>
+        </div>
+    </div> -->
 
 
 

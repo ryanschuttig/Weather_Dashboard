@@ -19,12 +19,16 @@ $("button").on("click", function (event) {
 
       console.log(response);
 
-      var newDiv = $("<div>");
+      var newList = $("<li>");
+      newList.text("citysearch");
+      newList.addClass("list-group-item");
 
       if (searchInput != null) {
         $("#citydata").text(response.name + " " + date);
-        newDiv.text(searchInput);
-        $("nav").append(newDiv);
+        newList.text(searchInput);
+        $("#history").prepend(newList);
+
+        $("#weatherdata").text("Temperature(F): " + Math.floor((response.main.temp * 9)/5 - 459.67) + " " + "Humidity: " + response.main.humidity + "%")
       }
 
     });

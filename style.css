@@ -1,4 +1,4 @@
-h1 {
+#title {
     text-align: center;
     background-color: rgb(40, 40, 40);
     color: white;
@@ -8,10 +8,10 @@ h1 {
 }
 
 form.example button {
-    width: 2%;
+    width: 3%;
     background: #2196F3;
     color: white;
-    font-size: 17px;
+    font-size: 24px;
     border: 1px solid grey;
     border-left: none;
     cursor: pointer;
@@ -50,6 +50,10 @@ form.example button {
       float: left;
   }
   
-  .citysearch {
+  #citysearch {
       float: left;
+      width: 20%;
+      line-height: 25px;
   }
+  
+  
