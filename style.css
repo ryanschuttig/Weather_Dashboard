@@ -18,6 +18,34 @@ form.example button {
     border-radius: 5px;
   }
 
-  .nav {
-      height: 50px;
+  .cityrow {
+      float: right;
+  }
+
+  .card {
+      border: solid 1px;
+      margin-right: 25px;
+  }
+
+  .bg-primary {
+      background-color: rgb(54, 121, 247);
+      border-radius: 5px;
+      width: 125px;
+      height: 150px;
+  }
+
+  .text-white {
+      color: white;
+  }
+
+  .card {
+      float: right;
+  }
+
+  h2 {
+      float: right;
+  }
+
+  .citylist {
+      float: left;
   }
